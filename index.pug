@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Gérer les dates en JS
+    link(rel="stylesheet", href="./assets/index.css")
+  body
+
+    .component__container 
+      .component__wrapper-card 
+        h2.component__title réserver vos vacances 
+        span.component__prix 
+          b#nigthPrice 46 
+          | € / nuit
+        form.component__form
+          .group
+            label(for="") Date d'arrivée
+            input(type="date", name="")
+          
+          .group 
+            label(for="") Date de début
+            input(type="date", name="")
+            
+          button(type="submit") Valider
+
+    script(src="./assets/index.js") 
