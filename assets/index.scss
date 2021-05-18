@@ -2,4 +2,66 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+}
+
+.component {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper-card {
+    width: 400px;
+    background-color: #000;
+    color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+  }
+
+  &__title{
+    padding: 1.5rem 0 0;
+    text-transform: uppercase;
+  }
+
+  &__prix{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 1.1rem;
+  }
+
+  &__form {
+    margin: 20px 0;
+    width: 50%;
+    margin: auto;
+
+    button {
+      padding: 10px 30px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      margin: 50px 0 20px;
+      font-size: 1rem;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+
+    label {
+      margin-bottom: 10px;
+    }
+
+    input {
+      padding: 10px;
+      outline: none;
+      border: 1px solid #000;
+      border-radius: 8px;
+      text-align: center;
+    }
+  }
 }

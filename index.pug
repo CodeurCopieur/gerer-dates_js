@@ -8,20 +8,20 @@ html(lang="en")
     link(rel="stylesheet", href="./assets/index.css")
   body
 
-    .component__container 
+    .component
       .component__wrapper-card 
         h2.component__title réserver vos vacances 
         span.component__prix 
           b#nigthPrice 46 
           | € / nuit
         form.component__form
-          .group
+          .component__group
             label(for="") Date d'arrivée
-            input(type="date", name="")
+            input(type="date", name="")#start_date
           
-          .group 
+          .component__group
             label(for="") Date de début
-            input(type="date", name="")
+            input(type="date", name="")#end_date
             
           button(type="submit") Valider
 
